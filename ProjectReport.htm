@@ -1,0 +1,2920 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="ProjectReport_files/filelist.xml">
+<link rel=Edit-Time-Data href="ProjectReport_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Cloudera</o:Author>
+  <o:LastAuthor>Cloudera</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>107</o:TotalTime>
+  <o:Created>2015-10-24T21:00:00Z</o:Created>
+  <o:LastSaved>2015-10-24T21:00:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>1697</o:Words>
+  <o:Characters>9677</o:Characters>
+  <o:Company>cloudera</o:Company>
+  <o:Lines>80</o:Lines>
+  <o:Paragraphs>22</o:Paragraphs>
+  <o:CharactersWithSpaces>11352</o:CharactersWithSpaces>
+  <o:Version>14.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="ProjectReport_files/themedata.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>99</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>JA</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:DocumentVariables>
+   <w:_WNPasteboard_>10</w:_WNPasteboard_>
+   <w:_WNSectionTitle>Data Cleansing</w:_WNSectionTitle>
+   <w:_WNSectionTitle_2>Choosing Algorithm</w:_WNSectionTitle_2>
+   <w:_WNSectionTitle_3>In Same and Out of Sample Error</w:_WNSectionTitle_3>
+   <w:_WNSectionTitle_4>Variable of Importance</w:_WNSectionTitle_4>
+   <w:_WNTabType_0>0</w:_WNTabType_0>
+   <w:_WNTabType_1>1</w:_WNTabType_1>
+   <w:_WNTabType_2>2</w:_WNTabType_2>
+   <w:_WNTabType_3>2</w:_WNTabType_3>
+   <w:_WNTabType_4>2</w:_WNTabType_4>
+   <w:EnableWordNotes>0</w:EnableWordNotes>
+   <w:WNDocDisplayRings>WNDocDisplayRings</w:WNDocDisplayRings>
+   <w:WNDocLookType>0</w:WNDocLookType>
+  </w:DocumentVariables>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="276">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073711037 9 0 511 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
+@font-face
+	{font-family:"Lucida Grande";
+	panose-1:2 11 6 0 4 5 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-520090897 1342218751 0 0 447 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Lucida Grande";
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoNoteLevel1, li.MsoNoteLevel1, div.MsoNoteLevel1
+	{mso-style-priority:99;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l0 level1 lfo1;
+	tab-stops:list 0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel1CxSpFirst, li.MsoNoteLevel1CxSpFirst, div.MsoNoteLevel1CxSpFirst
+	{mso-style-priority:99;
+	mso-style-type:export-only;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l0 level1 lfo1;
+	tab-stops:list 0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel1CxSpMiddle, li.MsoNoteLevel1CxSpMiddle, div.MsoNoteLevel1CxSpMiddle
+	{mso-style-priority:99;
+	mso-style-type:export-only;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l0 level1 lfo1;
+	tab-stops:list 0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel1CxSpLast, li.MsoNoteLevel1CxSpLast, div.MsoNoteLevel1CxSpLast
+	{mso-style-priority:99;
+	mso-style-type:export-only;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l0 level1 lfo1;
+	tab-stops:list 0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel2, li.MsoNoteLevel2, div.MsoNoteLevel2
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo1;
+	tab-stops:list .5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel2CxSpFirst, li.MsoNoteLevel2CxSpFirst, div.MsoNoteLevel2CxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo1;
+	tab-stops:list .5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel2CxSpMiddle, li.MsoNoteLevel2CxSpMiddle, div.MsoNoteLevel2CxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo1;
+	tab-stops:list .5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel2CxSpLast, li.MsoNoteLevel2CxSpLast, div.MsoNoteLevel2CxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo1;
+	tab-stops:list .5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel3, li.MsoNoteLevel3, div.MsoNoteLevel3
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l0 level3 lfo1;
+	tab-stops:list 1.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel3CxSpFirst, li.MsoNoteLevel3CxSpFirst, div.MsoNoteLevel3CxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l0 level3 lfo1;
+	tab-stops:list 1.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel3CxSpMiddle, li.MsoNoteLevel3CxSpMiddle, div.MsoNoteLevel3CxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l0 level3 lfo1;
+	tab-stops:list 1.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel3CxSpLast, li.MsoNoteLevel3CxSpLast, div.MsoNoteLevel3CxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l0 level3 lfo1;
+	tab-stops:list 1.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel4, li.MsoNoteLevel4, div.MsoNoteLevel4
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l0 level4 lfo1;
+	tab-stops:list 1.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel4CxSpFirst, li.MsoNoteLevel4CxSpFirst, div.MsoNoteLevel4CxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l0 level4 lfo1;
+	tab-stops:list 1.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel4CxSpMiddle, li.MsoNoteLevel4CxSpMiddle, div.MsoNoteLevel4CxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l0 level4 lfo1;
+	tab-stops:list 1.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel4CxSpLast, li.MsoNoteLevel4CxSpLast, div.MsoNoteLevel4CxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l0 level4 lfo1;
+	tab-stops:list 1.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel5, li.MsoNoteLevel5, div.MsoNoteLevel5
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	mso-list:l0 level5 lfo1;
+	tab-stops:list 2.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel5CxSpFirst, li.MsoNoteLevel5CxSpFirst, div.MsoNoteLevel5CxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	mso-list:l0 level5 lfo1;
+	tab-stops:list 2.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel5CxSpMiddle, li.MsoNoteLevel5CxSpMiddle, div.MsoNoteLevel5CxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	mso-list:l0 level5 lfo1;
+	tab-stops:list 2.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel5CxSpLast, li.MsoNoteLevel5CxSpLast, div.MsoNoteLevel5CxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	mso-list:l0 level5 lfo1;
+	tab-stops:list 2.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel6, li.MsoNoteLevel6, div.MsoNoteLevel6
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	mso-list:l0 level6 lfo1;
+	tab-stops:list 2.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel6CxSpFirst, li.MsoNoteLevel6CxSpFirst, div.MsoNoteLevel6CxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	mso-list:l0 level6 lfo1;
+	tab-stops:list 2.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel6CxSpMiddle, li.MsoNoteLevel6CxSpMiddle, div.MsoNoteLevel6CxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	mso-list:l0 level6 lfo1;
+	tab-stops:list 2.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel6CxSpLast, li.MsoNoteLevel6CxSpLast, div.MsoNoteLevel6CxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	mso-list:l0 level6 lfo1;
+	tab-stops:list 2.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel7, li.MsoNoteLevel7, div.MsoNoteLevel7
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	mso-list:l0 level7 lfo1;
+	tab-stops:list 3.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel7CxSpFirst, li.MsoNoteLevel7CxSpFirst, div.MsoNoteLevel7CxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	mso-list:l0 level7 lfo1;
+	tab-stops:list 3.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel7CxSpMiddle, li.MsoNoteLevel7CxSpMiddle, div.MsoNoteLevel7CxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	mso-list:l0 level7 lfo1;
+	tab-stops:list 3.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel7CxSpLast, li.MsoNoteLevel7CxSpLast, div.MsoNoteLevel7CxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	mso-list:l0 level7 lfo1;
+	tab-stops:list 3.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel8, li.MsoNoteLevel8, div.MsoNoteLevel8
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	mso-list:l0 level8 lfo1;
+	tab-stops:list 3.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel8CxSpFirst, li.MsoNoteLevel8CxSpFirst, div.MsoNoteLevel8CxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	mso-list:l0 level8 lfo1;
+	tab-stops:list 3.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel8CxSpMiddle, li.MsoNoteLevel8CxSpMiddle, div.MsoNoteLevel8CxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	mso-list:l0 level8 lfo1;
+	tab-stops:list 3.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel8CxSpLast, li.MsoNoteLevel8CxSpLast, div.MsoNoteLevel8CxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.75in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	mso-list:l0 level8 lfo1;
+	tab-stops:list 3.5in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel9, li.MsoNoteLevel9, div.MsoNoteLevel9
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:4.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	mso-list:l0 level9 lfo1;
+	tab-stops:list 4.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel9CxSpFirst, li.MsoNoteLevel9CxSpFirst, div.MsoNoteLevel9CxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:4.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	mso-list:l0 level9 lfo1;
+	tab-stops:list 4.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel9CxSpMiddle, li.MsoNoteLevel9CxSpMiddle, div.MsoNoteLevel9CxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:4.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	mso-list:l0 level9 lfo1;
+	tab-stops:list 4.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoteLevel9CxSpLast, li.MsoNoteLevel9CxSpLast, div.MsoNoteLevel9CxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:4.25in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	mso-list:l0 level9 lfo1;
+	tab-stops:list 4.0in;
+	font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Lucida Grande";
+	mso-ascii-font-family:"Lucida Grande";
+	mso-hansi-font-family:"Lucida Grande";
+	mso-bidi-font-family:"Lucida Grande";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+ /* Page Definitions */
+@page
+	{mso-footnote-separator:url(":ProjectReport_files:header.htm") fs;
+	mso-footnote-continuation-separator:url(":ProjectReport_files:header.htm") fcs;
+	mso-endnote-separator:url(":ProjectReport_files:header.htm") es;
+	mso-endnote-continuation-separator:url(":ProjectReport_files:header.htm") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-title-page:yes;
+	mso-first-header:url(":ProjectReport_files:header.htm") fh1;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-title-page:yes;
+	mso-first-header:url(":ProjectReport_files:header.htm") fh2;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-title-page:yes;
+	mso-first-header:url(":ProjectReport_files:header.htm") fh3;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-title-page:yes;
+	mso-first-header:url(":ProjectReport_files:header.htm") fh4;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.WordSection4
+	{page:WordSection4;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-227;
+	mso-list-template-ids:498774466;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Note Level 1";
+	mso-level-text:"";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Note Level 2";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Note Level 3";
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Note Level 4";
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Note Level 5";
+	mso-level-text:\F0FA;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Note Level 6";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Note Level 7";
+	mso-level-text:o;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Note Level 8";
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Note Level 9";
+	mso-level-text:\F0FA;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1072853307;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1758498782 -142803292 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:1256087945;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-161077336 1894784564 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:0in;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3
+	{mso-list-id:1414430353;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-68264258 -453314332 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-start-at:9;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=WordSection1 style='layout-grid:18.0pt'>
+
+<p class=MsoNoteLevel1CxSpFirst style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Data Cleansing:</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Before we are able to use the data set
+provided on our algorithm, we need to clean the data. The data contained
+several columns with <span class=GramE>a<span style="mso-spacerun:yes">&nbsp;
+</span>value</span> of “#DIV!”. So while reading the data from file, I turned
+“#DIV!” into NA. So the total NA values include cell values with “NA” as well
+as cell values with “#DIV!<span class=GramE>”.</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=GramE>data</span> &lt;-
+read.csv(“pml-training.csv”, header = TRUE, <span class=SpellE>na.string</span>
+= c(“#DIV!”, “NA”, <span class=SpellE>stringsAsFactors</span> = FALSE)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Quick visual glance at the data tells
+us that first 6 columns are not contributing to predict “<span class=SpellE>classe</span>”.
+They were time variables, user name. So out of 160 variables read, I removed
+the first 6 variables as part of cleansing.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=GramE>data</span> &lt;-
+data &lt;- [, -(1:6)]</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Another thing that stands out by
+visual glance at the data is that there are some columns where most values
+equal to “NA”. So, to take care of that, I removed any columns from our dataset
+that have more than 80% “NA” values.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=GramE>cols</span> &lt;-
+apply (data, 2, function(x) sum(is.na(x)))</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>data</span>_na</span>
+&lt;- data[, cols &lt; (<span class=SpellE>nrow</span>(data) * .2)] </p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>This removed another hundred columns
+from our data and we are looking at a reasonable 54 columns instead of original
+160. But of course we can do better. Now, I looked at highly correlated
+predictors and eliminated anything that has a correlation greater than 90%.
+This really can be reduced to even 70-80% but I wanted to make sure that I
+don’t compromise on accuracy. </p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>highlyCorPred</span></span>
+&lt;- <span class=SpellE>findCorrelation</span>(<span class=SpellE>cor</span>(<span
+class=SpellE>data_na</span>[, -54]), cutoff = 0.9)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>data</span>_na</span>
+&lt;- <span class=SpellE>data_na</span> [, -<span class=SpellE>highlyCorPred</span>]</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>This leaves me with only 41 variables
+to use as predictors.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>At this point I thought about using
+PCA to further reduce the predictors but using PCA means I will lose the
+ability to infer. Given dataset is only 12MB, and 41 predictors is not a
+terribly bad number even if you have a laptop, so I will keep my 41 variables
+and not use PCA. A quick test on trying to use PCA tells me that 20 variables
+will retain 90% variability.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Now, I am ready to create my training,
+cross validation and test set.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>inTrain</span></span>
+&lt;- <span class=SpellE>createDataPartition</span> (y=<span class=SpellE>data_na$classe</span>,
+p=0.7, list=FALSE, t=2)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=GramE>training</span>
+&lt;- <span class=SpellE>data_na</span> [,<span style="mso-spacerun:yes">&nbsp;
+</span><span class=SpellE>inTrain</span>]</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=GramE>testing</span> &lt;-
+<span class=SpellE>data_na</span>[, -<span class=SpellE>inTrain</span>]</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>x</span>_validation</span>
+&lt;- <span class=SpellE>data_na</span>[-<span class=SpellE>inTrain</span>[,
+2], ] #notice t = 2 in <span class=SpellE>createDataPartition</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<span style='font-size:12.0pt;font-family:Verdana;mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always;
+mso-break-type:section-break'>
+</span>
+
+<div class=WordSection2 style='layout-grid:18.0pt'>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Choosing algorithm:</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>All datasets have been prepared and
+data have been cleaned. Now I have to choose an algorithm.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>I initially tried to use linear
+algorithm rather than using a tree algorithm. Very soon I learned the <span
+class=SpellE>glm</span> <span class=GramE>cannot</span> be used to predict
+multiple classes. In other words, the problem we have is a multi class
+classification which <span class=SpellE>glm</span> <span class=SpellE>canbe</span>
+used to solve binary classification. So that goes out the door.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Then I was down to using tree
+algorithms. I could create my model using <span class=SpellE>rpart</span>,
+random <span class=SpellE><span class=GramE>forrest</span></span> or bagging
+(tree bag).</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>On first run of trying to create a
+model using <span class=SpellE>rpart</span>, I got an error on <span
+class=SpellE>classe</span> variable. It has been read as “<span class=SpellE>chr</span>”.
+This needs to be Factor. So, I converted <span class=SpellE>classe</span> to
+factor.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>training</span>$classe</span>
+&lt;- <span class=SpellE>as.factor</span> (<span class=SpellE>training$classe</span>)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=GramE>now</span> run the
+model using <span class=SpellE>rpart</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>modelFit</span></span>
+&lt;- train (<span class=SpellE>classe</span> ~ ., method = &quot;<span
+class=SpellE>rpart</span>&quot;, data=training)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1026" type="#_x0000_t75"
+ alt="Description: Untitled:Users:iqureshi:MachineLearning:PracticalMachineLearning:Rplot.png"
+ style='width:468pt;height:393pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ProjectReport_files/image001.png" o:title="Rplot.png"/>
+</v:shape><![endif]--><![if !vml]><img width=470 height=395
+src="ProjectReport_files/image002.png"
+alt="Description: Untitled:Users:iqureshi:MachineLearning:PracticalMachineLearning:Rplot.png"
+v:shapes="Picture_x0020_1"><![endif]></span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Looking at this tree model we can
+easily traverse and see that our predictors that are really contributing to
+predict <span class=SpellE>classe</span> variable are six. They are:</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE>Pitch_forearm</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE>Magnet_belt_y</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE>Magnet_dumbbell_y</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE>Role_forearm</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE>Magnet_dumbbell_z</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>num</span>_window</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>This unfortunately is not very
+accurate. Here are the results for <span class=SpellE>rpart</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=SpellE><span
+class=GramE>modelFit</span>$results</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class=SpellE>cp</span><span style="mso-spacerun:yes">&nbsp;
+</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Accuracy<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>Kappa <span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=SpellE>AccuracySD</span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;
+</span><span class=SpellE>KappaSD</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>1 0.03473706 0.5470362 0.4265475
+0.01535966 0.01887568</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>2 0.03867867 0.5113930 0.3726988
+0.03362248 0.05275437</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>3 0.06602838 0.3969048 0.1859103
+0.09391434 0.15495164</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>As you can see, Accuracy is horrible.
+So this is not the model, I want to use. Next I want to try bagging to see if
+it improves accuracy.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>For this purpose I choose <span
+class=SpellE>treebag</span>.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=SpellE><span
+class=GramE>modelFit</span></span> &lt;- train (<span class=SpellE>classe</span>
+~ ., method = &quot;<span class=SpellE>treebag</span>&quot;, data=training)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=SpellE><span
+class=GramE>modelFit</span>$results</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span><span class=GramE>parameter</span><span style="mso-spacerun:yes">&nbsp;
+</span>Accuracy<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Kappa<span style="mso-spacerun:yes">&nbsp; </span><span class=SpellE>AccuracySD</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=SpellE>KappaSD</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.25in;mso-add-space:auto;
+text-indent:0in;mso-list:l2 level1 lfo2;tab-stops:.5in'><![if !supportLists]><span
+style='mso-fareast-font-family:Verdana;mso-bidi-font-family:Verdana'><span
+style='mso-list:Ignore'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE>none</span> 0.9941846
+0.9926424 0.001983685 0.002510777</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.25in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.25in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'>This model is pretty accurate, to the point that
+I think this is over fitting my data. Being a novice, I am not sure if a model
+without over fitting can be this good.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.25in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.25in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'>So, I want to try other methods like <span
+class=SpellE>gbm</span>.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.25in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'>I create another model based on “<span
+class=SpellE>gbm</span>” and here is what I get.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><span class=SpellE><span class=GramE>gbm</span>_modelFit</span>
+&lt;- train(<span class=SpellE>classe</span>~ ., method = &quot;<span
+class=SpellE>gbm</span>&quot;, data=training, verbose = FALSE)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=SpellE><span
+class=GramE>gbm</span>_modelFit$results</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span><span class=GramE>shrinkage</span> <span class=SpellE>interaction.depth</span>
+<span class=SpellE>n.minobsinnode</span> <span class=SpellE>n.trees</span><span
+style="mso-spacerun:yes">&nbsp; </span>Accuracy<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>Kappa<span
+style="mso-spacerun:yes">&nbsp; </span><span class=SpellE>AccuracySD</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=SpellE>KappaSD</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>10<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>50 0.7362443 0.6652206 0.005829953 0.007295411</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>4<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>2<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>10<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>50 0.8744365
+0.8409511 0.004568948 0.005805287</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>7<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>3<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>10<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>50 0.9323927 0.9143904 0.005082109 0.006464350</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>2<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>10<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>100
+0.8097637 0.7590058 0.004130229 0.005157751</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>5<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>2<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>10<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>100
+0.9397778 0.9237704 0.003868634 0.004899705</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>8<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>3<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>10<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>100
+0.9764632 0.9702163 0.002602426 0.003298157</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>3<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>10<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>150
+0.8540641 0.8152253 0.003417016 0.004296838</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>6<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>2<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>10<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>150
+0.9670954 0.9583618 0.003075631 0.003896764</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'>9<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>3<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>10<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>150
+0.9901671 0.9875584 0.001504606 0.001906313</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'>I run this <span class=SpellE>gbm</span> model on
+my x-validation set and results are pretty encouraging.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'>&gt; <span class=GramE>prediction</span> &lt;-
+predict(<span class=SpellE>gbm_modelFit</span>, <span class=SpellE>x_validation_set</span>)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'>&gt; <span class=SpellE><span class=GramE>confusionMatrix</span></span>(prediction)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'>Confusion matrix of this model tells us that <span
+class=GramE>its</span> pretty accurate.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+mso-list:none;tab-stops:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Statistics by Class:</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Class: A Class: B Class: C Class: D Class: E</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Sensitivity<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0.9970<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9886<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9864<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9865<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9945</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Specificity<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0.9981<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9966<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9975<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9978<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9992</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE>Pos</span> <span
+class=SpellE>Pred</span> Value<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0.9952<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9860<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9883<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9886<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9963</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE>Neg</span> <span
+class=SpellE>Pred</span> Value<span style="mso-spacerun:yes">&nbsp; </span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>0.9988<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9973<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9971<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9974<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9988</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Prevalence<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0.2845<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1935<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1743<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1638<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1839</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Detection Rate<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0.2836<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1913<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1720<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1616<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1828</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Detection Prevalence<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.2850<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1941<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1740<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1635<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.1835</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Balanced Accuracy<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0.9976<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9926<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9919<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9921<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0.9968</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=SpellE><span
+class=GramE>gbm</span>_modelFit</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Stochastic Gradient Boosting </p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>27474 samples</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>41 predictor</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5 classes: 'A', 'B', 'C',
+'D', 'E' </p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>No pre-processing</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Resampling: Bootstrapped (25 reps) </p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Summary of sample sizes: 27474, 27474,
+27474, 27474, 27474, 27474, ... </p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Resampling results across tuning
+parameters:</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span><span class=SpellE><span class=GramE>interaction.depth</span></span><span
+class=GramE><span style="mso-spacerun:yes">&nbsp; </span><span class=SpellE>n.trees</span></span><span
+style="mso-spacerun:yes">&nbsp; </span>Accuracy<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>Kappa<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Accuracy SD<span
+style="mso-spacerun:yes">&nbsp; </span>Kappa SD<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span>1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>50<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>0.7362443<span style="mso-spacerun:yes">&nbsp; </span>0.6652206</span><span
+style="mso-spacerun:yes">&nbsp; </span>0.005829953<span
+style="mso-spacerun:yes">&nbsp; </span>0.007295411</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span>1<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>100<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>0.8097637<span style="mso-spacerun:yes">&nbsp; </span>0.7590058</span><span
+style="mso-spacerun:yes">&nbsp; </span>0.004130229<span
+style="mso-spacerun:yes">&nbsp; </span>0.005157751</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span>1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>150<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>0.8540641<span style="mso-spacerun:yes">&nbsp; </span>0.8152253</span><span
+style="mso-spacerun:yes">&nbsp; </span>0.003417016<span
+style="mso-spacerun:yes">&nbsp; </span>0.004296838</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span>2<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>50<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>0.8744365<span style="mso-spacerun:yes">&nbsp; </span>0.8409511</span><span
+style="mso-spacerun:yes">&nbsp; </span>0.004568948<span
+style="mso-spacerun:yes">&nbsp; </span>0.005805287</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span>2<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>100<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>0.9397778<span style="mso-spacerun:yes">&nbsp; </span>0.9237704</span><span
+style="mso-spacerun:yes">&nbsp; </span>0.003868634<span
+style="mso-spacerun:yes">&nbsp; </span>0.004899705</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span>2<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>150<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>0.9670954<span style="mso-spacerun:yes">&nbsp; </span>0.9583618</span><span
+style="mso-spacerun:yes">&nbsp; </span>0.003075631<span
+style="mso-spacerun:yes">&nbsp; </span>0.003896764</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span>3<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>50<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>0.9323927<span style="mso-spacerun:yes">&nbsp; </span>0.9143904</span><span
+style="mso-spacerun:yes">&nbsp; </span>0.005082109<span
+style="mso-spacerun:yes">&nbsp; </span>0.006464350</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span>3<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>100<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>0.9764632<span style="mso-spacerun:yes">&nbsp; </span>0.9702163</span><span
+style="mso-spacerun:yes">&nbsp; </span>0.002602426<span
+style="mso-spacerun:yes">&nbsp; </span>0.003298157</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span>3<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>150<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>0.9901671<span style="mso-spacerun:yes">&nbsp; </span>0.9875584</span><span
+style="mso-spacerun:yes">&nbsp; </span>0.001504606<span
+style="mso-spacerun:yes">&nbsp; </span>0.001906313</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Tuning parameter 'shrinkage' was held
+constant at a value of 0.1</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Tuning parameter '<span class=SpellE>n.minobsinnode</span>'
+was</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;</span><span class=GramE>held</span> constant at
+a value of 10</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Accuracy was used to select the
+optimal model <span class=GramE>using<span style="mso-spacerun:yes">&nbsp;
+</span>the</span> largest value.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>The final values used for the model
+were <span class=SpellE>n.trees</span> = 150, <span class=SpellE>interaction.depth</span>
+= 3, shrinkage = 0.1</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;</span><span class=GramE>and</span> <span
+class=SpellE>n.minobsinnode</span> = 10.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>The best tune option for this model is</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt;<span class=SpellE><span
+class=GramE>gbm</span>_modelFit$bestTune</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span><span class=SpellE><span class=GramE>n</span>.trees</span> <span
+class=SpellE>interaction.depth</span> shrinkage <span class=SpellE>n.minobsinnode</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>9<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>150<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>3<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0.1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>10</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Another important aspect to look at is
+the <span class=SpellE>finalModel</span> object. This will tell us how many
+variables actually contributed.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt;<span class=SpellE><span
+class=GramE>gbm</span>_modelFit$finalModel</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>A gradient boosted model with
+multinomial loss function. 150 iterations were performed. There were 41
+predictors of which 33 had non-zero influence.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Plotting the model to see the
+estimates of performance and tuning parameters.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_2" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:468pt;
+ height:362pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ProjectReport_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=470 height=364
+src="ProjectReport_files/image004.png" v:shapes="Picture_x0020_2"><![endif]></span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>As you can see, Accuracy increases as
+we increase number of iterations and tree depth.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>At this point, I can use either <span
+class=SpellE>gbm</span> or <span class=SpellE>treebag</span>. I continue with <span
+class=SpellE>treebag</span>.</p>
+
+</div>
+
+<span style='font-size:12.0pt;font-family:Verdana;mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always;
+mso-break-type:section-break'>
+</span>
+
+<div class=WordSection3 style='layout-grid:18.0pt'>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>In Sample and Out of Sample Error:</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>To check In Sample Error, run predict
+and then show confusion matrix on training data.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=SpellE><span
+class=GramE>confusionMatrix</span></span>(<span class=SpellE>train_predict</span>,
+<span class=SpellE>training$classe</span>)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Confusion Matrix and Statistics</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Reference</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Prediction<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>A<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>B<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>C<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>D<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>E</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>A 7804<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>23<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE>0</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE>0</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>B<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>6 5274<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>36<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>C<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>9 4748<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>37<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>2</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>D<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>2<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>10<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>8 4460<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>19</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>E<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE>0</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE>0</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>2 5029</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Overall Statistics</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class=GramE>Accuracy :</span> 0.9942<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>95% <span class=GramE>CI :</span> (0.9932, 0.9951)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Accuracy in case of in sample is
+99.42%.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>To check out of sample error, I ran
+predict on cross validation and then call the confusion matrix to see out of
+sample error.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=GramE>prediction</span>
+&lt;- predict(<span class=SpellE>modelFit</span>, <span class=SpellE>x_validation_set</span>)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=SpellE><span
+class=GramE>confusionMatrix</span></span>(prediction, <span class=SpellE>x_validation_set$classe</span>)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Confusion Matrix and Statistics</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;</span>Reference</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Prediction<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>A<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>B<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>C<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>D<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>E</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>A 1669<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>8<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE>0</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE>0</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>B<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>4 1126<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>12<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE>0</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>C<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>2 1012<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>10<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>D<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>2<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE><span
+class=GramE>2</span></span><span class=GramE><span
+style="mso-spacerun:yes">&nbsp; </span>951</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>6</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>E<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>1<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3 1076</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Overall Statistics</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class=GramE>Accuracy :</span> 0.9913<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>95% <span class=GramE>CI :</span> (0.9886, 0.9935)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>From both confusion matrices, we can
+see that in sample error is lower than out of sample error. Accuracy is high.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Finally I ran the model on test data
+created using “<span class=SpellE><span class=GramE>CreateDataPartition</span></span><span
+class=GramE>(</span>)” earlier and the results are very encouraging. The out of
+sample error is little more than train error as expected but accuracy of
+algorithm is still pretty high.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=SpellE><span
+class=GramE>confusionMatrix</span></span>(<span class=SpellE>test_predict</span>,
+<span class=SpellE>testing$classe</span>)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Confusion Matrix and Statistics</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Reference</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Prediction<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>A<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>B<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>C<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>D<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>E</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>A 481<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span><span class=SpellE>0</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span><span class=SpellE>0</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>B<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>0 343<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>2<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span><span class=SpellE>0</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>C<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span><span class=SpellE>0</span>
+310<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>5<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>D<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span><span class=SpellE>1</span>
+277<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>2</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>E<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>0<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>1 344</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Overall Statistics</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span class=GramE>Accuracy :</span> 0.991<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;font-family:Verdana;mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+mso-fareast-theme-font:minor-fareast;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always;
+mso-break-type:section-break'>
+</span>
+
+<div class=WordSection4 style='layout-grid:18.0pt'>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>Variable of Importance:</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>To find which variables are
+contributing most towards prediction, I ran <span class=SpellE><span
+class=GramE>varImp</span></span><span class=GramE>(</span>) method on my model.
+Please see the result.</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>&gt; <span class=SpellE><span
+class=GramE>varImp</span></span>(<span class=SpellE>modelFit</span>)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>treebag</span></span>
+variable importance</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span><span class=GramE>only</span> 20 most important variables shown (out of
+41)</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span style="mso-spacerun:yes">&nbsp;
+</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Overall</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>num</span>_window</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>100.00</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>yaw</span>_belt</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>74.09</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>magnet</span>_dumbbell_y</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>46.49</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>magnet</span>_dumbbell_z</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>43.54</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>accel</span>_dumbbell_y</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>37.31</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>roll</span>_forearm</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>34.70</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>magnet</span>_belt_y</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>34.32</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>pitch</span>_forearm</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>33.18</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>total</span>_accel_belt</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>29.30</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>gyros</span>_belt_z</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>29.02</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>roll</span>_dumbbell</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>27.39</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>magnet</span>_dumbbell_x</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>24.19</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>magnet</span>_belt_z</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>22.53</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>magnet</span>_forearm_z</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>18.86</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>total</span>_accel_dumbbell</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>17.55</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>magnet</span>_belt_x</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>15.46</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>roll</span>_arm</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="mso-spacerun:yes">&nbsp;&nbsp;</span>14.91</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>magnet</span>_arm_x</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>14.40</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>accel</span>_forearm_x</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>13.14</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><span class=SpellE><span class=GramE>yaw</span>_dumbbell</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>12.33</p>
+
+<p class=MsoNoteLevel1CxSpMiddle style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoteLevel1CxSpLast style='margin-left:0in;mso-add-space:auto;
+text-indent:0in;mso-list:l0 level1 lfo1'>We can see 20 most important variables
+that are contributing towards the outcome. Knowing these, we can have our users
+improve their exercise so they are doing it right.</p>
+
+</div>
+
+</body>
+
+</html>
